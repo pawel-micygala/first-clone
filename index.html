@@ -12,16 +12,17 @@
     <div class="wrapper">
         <div class="sidenav">
             <div class="sidenav__home">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="29" viewBox="0 0 26 29">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29" viewBox="0 0 26 29">
                         <path id="Logo"
                             d="M28,38V48h4V38Zm8,0V48h4V38ZM25,55H51V51H25ZM44,38V48h4V38ZM38,26,25,33.143V36H51V33.143Z"
                             transform="translate(-25 -26)" fill="#4da1ff" />
                     </svg>
                 </a>
             </div>
-            <div>
-                <ul class="sidenav__list">
-                    <li class="sidenav__item">
+            <div class="sidenav__icons">
+                <ul class="icons__list">
+                    <li class="list__item">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
                                 <path id="Shape"
@@ -30,7 +31,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="sidenav__item">
+                    <li class="list__item">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
                                 <path id="Shape"
@@ -39,7 +40,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="sidenav__item">
+                    <li class="list__item">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22">
                                 <path id="Shape"
@@ -48,7 +49,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="sidenav__item">
+                    <li class="list__item">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
                                 <path id="Shape"
@@ -59,15 +60,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="sidenav__ham">
+            <div class="sidenav__menu-btn">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14">
                         <path id="Shape" d="M28.5,979h21v-2.333h-21Zm0-5.833h21v-2.333h-21Zm0-8.167v2.333h21V965Z"
                             transform="translate(-28.5 -965)" fill="#d8dfe5" />
-                    </svg> </a>
+                    </svg>
+                </a>
             </div>
         </div>
-        </side>
         <div class="content">
             <nav class="topnav">
                 <div class="topnav__search">
@@ -80,12 +81,12 @@
                                     transform="translate(-0.625 -0.625)" fill="#d8dfe5" />
                             </svg>
                         </a>
-                        <input type="search" placeholder="Search" class="topnav__search__input">
+                        <input type="search" placeholder="Search" class="topnav__search-input">
                     </form>
                 </div>
-                <div class="topnav__user__area">
-                    <div class="topnav__user">
-                        <img src="img/user-foto-1.jpg" class="topnnav__user__foto" style="margin: 3px;" width="60"
+                <div class="topnav__user-area">
+                    <div class="user-area__item">
+                        <img src="img/user-foto-1.jpg" class="user-area__foto" style="margin: 3px;" width="60"
                             height="50" alt="user-foto">
                         <span style="margin: 3px;">Batman</span>
                         <a href="#" style="margin: 3px;">
@@ -93,7 +94,7 @@
                                 <path id="Arrow" d="M174,18l5,5,5-5Z" transform="translate(-174 -18)" fill="#d8dfe5" />
                             </svg>
                     </div>
-                    <div class="topnav__plus__circle">
+                    <div class="user-area__circle">
                         <a href="#" style="margin-left: 0px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25.833" height="60"
                                 viewBox="0 0 25.833 26.014">
@@ -103,7 +104,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="topnav__logout__circle">
+                    <div class="user-area__logout">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="60" viewBox="0 0 25 25">
                                 <path id="Shape"
@@ -114,7 +115,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="main">
+            <main class="main">
                 <div class="main__content">
                     <div class="main__view">
                         <p>Total Collections</p>
@@ -123,85 +124,85 @@
                     <div class="main__articles">
                         <div class="main__article">
                             <img src="img/image-01.jpg" class="main__foto">
-                            <h4 class="main___article__title">
+                            <h4 class="main___article-title">
                                 <a href="#">Business</a>
                             </h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-02.jpg" class="main__foto">
-                            <h4 class="main___article__title">
+                            <h4 class="main___article-title">
                                 <a href="#">Business</a>
                             </h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-03.jpg" class="main__foto">
-                            <h4 class="main___article__title"><a href="#">Business</a></h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h4 class="main___article-title"><a href="#">Business</a></h4>
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-04.jpg" class="main__foto">
-                            <h4 class="main___article__title"><a href="#">Business</a></h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h4 class="main___article-title"><a href="#">Business</a></h4>
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-05.jpg" class="main__foto">
-                            <h4 class="main___article__title"><a href="#">Business</a></h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h4 class="main___article-title"><a href="#">Business</a></h4>
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-06.jpg" class="main__foto">
-                            <h4 class="main___article__title"><a href="#">Business</a></h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h4 class="main___article-title"><a href="#">Business</a></h4>
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-07.jpg" class="main__foto">
-                            <h4 class="main___article__title"><a href="#">Business</a></h4>
-                            <h3 class="main__article__header">What is the big reasons for
+                            <h4 class="main___article-title"><a href="#">Business</a></h4>
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                         <div class="main__article">
                             <img src="img/image-08.jpg" class="main__foto">
-                            <h4 class="main___article__title"><a href="#">Business</a></h4>
-                            <h3>What is the big reasons for
+                            <h4 class="main___article-title"><a href="#">Business</a></h4>
+                            <h3 class="main__article-header">What is the big reasons for
                                 marketing your business</h3>
-                            <p class="main__article__text">Donec facilisis tortor ut augue lacinia, at
+                            <p class="main__article-text">Donec facilisis tortor ut augue lacinia, at
                                 viverra est semper. Sed sapien metus,
                                 scelerisque nec pharetra id.</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
 </body>
 
-</html>
+</html><br>
