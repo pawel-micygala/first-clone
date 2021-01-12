@@ -65,6 +65,9 @@ body {
 .topnav__search {
     margin-left: calc(var(--offset-a) * 1px);
 }
+.topnav__link {
+    text-decoration: none;
+}
 .topnav__input {
     border: none;
 }
