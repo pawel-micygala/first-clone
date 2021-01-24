@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    @media screen and (max-width: map-get($brakpoint, device)) {
+        display: flex;
+        flex-direction: column;        
+    }
+}
+.sidenav {
+    width: $offset-a * 1vh;
+    height: $offset-b * 1vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: map-get($brakpoint, device)) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;       
+            width: $offset-b * 1%;
+            height: $offset-a * 1vh;
+    }
+}
+.topnav {
+    border-left: $offset-g solid $color-gray;
+    border-bottom: $offset-g solid $color-gray;
+    display: flex;
+    align-items: center;
+    width: $offset-b * 1%;
+    height: $offset-a * 1vh;
+    @media screen and (max-width: map-get($brakpoint, device)) {
+            width: $offset-m;
+            margin: auto;
+            border: none;
+            display: block;
+            align-items: center;
+            height: double($offset-a) * 1vh;
+    }
+}
+.content {
+    width: $offset-b * 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

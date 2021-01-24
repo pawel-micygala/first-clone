@@ -1,11 +1,44 @@
 * {
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-:root {
-
-}
-
+    $brakpoint: ("device": 600px); 
+    $color-white: #ffff;
+    $color-gray: #f9f9f9;
+    $color-darker-gray: #adadad;
+    $line-height: 1.5;
+    $offset-a: 10;
+    $offset-b: 100;
+    $offset-c: 20;
+    $offset-d: 25vh;
+    $offset-e: 50;
+    $offset-f: 10px;
+    $offset-g: 3px;
+    $offset-h: 15vh;
+    $offset-i: 90vh;
+    $offset-j: 5;
+    $offset-k: 0;
+    $offset-m: 80%;
 body {
-
+    font-family: "Roboto", sans-serif;
 }
+@mixin card {
+    border: 1px solid $color-darker-gray;
+    background-color: $color-white;
+    width: 250px;
+    margin: $offset-k * 0px $offset-c * 1px $offset-e * 1px
+        $offset-k * 0px;
+    padding-bottom: $offset-j * 1vh;
+}
+@mixin margins {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+@mixin margin {
+    margin-bottom: 0px;
+}
+@function double ($size){
+    @return $size * 2;
+}
+
