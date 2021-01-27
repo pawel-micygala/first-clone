@@ -1,0 +1,41 @@
+$breakpoints: (
+    "phone": 600px,
+    "tablet": 992px,
+    "desktop": 1200px,
+) !default;
+$color-white: #fff;
+$color-gray: #f9f9f9;
+$color-darker-gray: #adadad;
+$line-height: 1.5;
+$offset: 3px;
+$sidenav-width-desktop: 10vh;
+$sidenav-height-desktop: 100vh;
+$sidenav-width-phone: 100%;
+$sidenav-height-phone: 10vh;
+$sidenav-home-margin-top-desktop: 20%;
+$sidenav-list-margin-bottom-desktop: 25vh;
+$sidenav-list-width-phone: 200px;
+$sidenav-item-margin-bottom-desktop: 50px;
+$sidenav-menu-margin-bottom-desktop: 10px;
+$topnav-width-desktop: 100%;
+$topnav-height-desktop: 10vh;
+$topnav-width-phone: 80%;
+$topnav-height-phone: 20vh;
+$topnav-search-margin-left: 10px;
+$topnav-account-margin-right: 10px;
+$topnav-account-margin-left: 10px;
+$topnav-photo-border-radius: 50%;
+$topnav-circle-width-desktop: 100px;
+$topnav-logout-width-desktop: 100px;
+$topnav-logout-width-phone: 100px;
+$main-content-padding-top: 5vh;
+$main-view-margin-desktop: 0vh 20vh 10vh 15vh;
+$main-view-padding-bottom-phone: 10vh;
+$main-view-width-phone: 80%;
+$content-width: 100%;
+$card-photo-max-width: 100%;
+$card-photo-max-height: 100%;
+$card-title-padding: 3px;
+$card-title-margin-bottom: 10px;
+$card-header-padding: 3px;
+$card-text-padding: 5px;

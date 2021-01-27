@@ -1,0 +1,32 @@
+.sidenav {
+    &__home {
+        margin-bottom: auto;
+        margin-top: $sidenav-home-margin-top-desktop;
+        @include media-max-width("phone") {
+            @include margins-y-none;
+        }
+    }
+    &__list {
+        margin-bottom: $sidenav-list-margin-bottom-desktop;
+        list-style: none;
+        @include media-max-width("phone") {
+            width: $sidenav-list-width-phone;
+            display: flex;
+            justify-content: space-around;
+            @include margin-y-none;
+        }
+    }
+    &__item {
+        margin-bottom: $sidenav-item-margin-bottom-desktop;
+        @include media-max-width("phone") {
+            @include margin-y-none;
+        }
+    }
+    &__menu {
+        margin-top: auto;
+        margin-bottom: $sidenav-menu-margin-bottom-desktop;
+        @include media-max-width("phone") {
+            @include margins-y-none;
+        }
+    }
+}

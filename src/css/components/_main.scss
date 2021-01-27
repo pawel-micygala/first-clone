@@ -1,0 +1,39 @@
+.main {
+    &__content {
+        background-color: $color-gray;
+        padding-top: $main-content-padding-top;
+    }
+    &__view {
+        display: flex;
+        justify-content: space-between;
+        margin: $main-view-margin-desktop;
+        @include media-max-width("phone") {
+            display: flex;
+            justify-content: space-between;
+            width: $main-view-width-phone;
+            margin: auto;
+            padding-bottom: $main-view-padding-bottom-phone;
+        }
+    }
+}
+.card {
+    @include card;
+    &__link {
+        text-decoration: none;
+    }
+    &__photo {
+        max-width: $card-photo-max-width;
+        max-height: $card-photo-max-height;
+    }
+    &__title {
+        padding: $card-title-padding;
+        margin-bottom: $card-title-margin-bottom;
+    }
+    &__header {
+        padding: $card-header-padding;
+    }
+    &__text {
+        padding: $card-text-padding;
+        line-height: $line-height;
+    }
+}

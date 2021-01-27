@@ -1,0 +1,15 @@
+.sidenav {
+    width: $sidenav-width-desktop;
+    height: $sidenav-height-desktop;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    @include media-max-width("phone") {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: $sidenav-width-phone;
+        height: $sidenav-height-phone;
+    }
+}
