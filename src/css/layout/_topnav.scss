@@ -1,0 +1,16 @@
+.topnav {
+    border-left: $offset solid $color-gray;
+    border-bottom: $offset solid $color-gray;
+    display: flex;
+    align-items: center;
+    width: $topnav-width-desktop;
+    height: $topnav-height-desktop;
+    @include media-max-width("phone") {
+        width: $topnav-width-phone;
+        margin: auto;
+        border: none;
+        display: block;
+        align-items: center;
+        height: $topnav-height-phone;
+    }
+}

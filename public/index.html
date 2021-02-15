@@ -73,15 +73,18 @@
             <nav class="topnav">
                 <div class="topnav__search">
                     <form class="topnav__form">
-                        <a href="#" class="topnav__link">
+                        <button href="#" class="topnav__link js-topnav-dropright-toggle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21.134" height="21.134"
                                 viewBox="0 0 21.134 21.134">
                                 <path id="Shape"
                                     d="M15.729,13.917h-.955l-.338-.326a7.866,7.866,0,1,0-.846.846l.326.338v.955l6.042,6.03,1.8-1.8Zm-7.25,0a5.438,5.438,0,1,1,5.438-5.438A5.43,5.43,0,0,1,8.479,13.917Z"
                                     transform="translate(-0.625 -0.625)" fill="#d8dfe5" />
                             </svg>
-                        </a>
-                        <input type="search" placeholder="Search" class="topnav__input">
+                        </button>
+                        <div class="topnav__dropright js-topnav-dropright">
+                            <button class="topnav__search-close">X</button>
+                            <input type="search" placeholder="Search" class="topnav__input">
+                        </div>
                     </form>
                 </div>
                 <div class="topnav__user">
@@ -89,10 +92,21 @@
                         <img src="img/user-foto-1.jpg" class="topnav__photo" style="margin: 3px;" width="60" height="50"
                             alt="user-foto">
                         <span style="margin: 3px;" class="topnav__name">Batman</span>
-                        <a href="#" style="margin: 3px;" class="topnav__link">
+                        <a href="#" style="margin: 3px;" class="topnav__link js-user-dropdown-toggle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5">
                                 <path id="Arrow" d="M174,18l5,5,5-5Z" transform="translate(-174 -18)" fill="#d8dfe5" />
                             </svg>
+                        </a>
+                    </div>
+                    <div class="topnav__dropdown js-user-dropdown ">
+                        <ul class="topnav__dropdownList">
+                            <li class="topnav__dropdownItem">
+                                <a class="topnav__dropdownLink" href="#">My Account</a>
+                            </li>
+                            <li class="topnav__dropdownItem">
+                                <a class="topnav__dropdownLink" href="#">Logout</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="topnav__circle">
                         <a href="#" style="margin-left: 0px;" class="topnav__link">
@@ -215,5 +229,7 @@
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
+
 
 </html>

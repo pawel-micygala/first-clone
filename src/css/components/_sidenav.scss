@@ -16,6 +16,9 @@
             @include margin-y-none;
         }
     }
+    &__icons {
+        margin-top: $sidenav-icons-margin-top;
+    }
     &__item {
         margin-bottom: $sidenav-item-margin-bottom-desktop;
         @include media-max-width("phone") {
