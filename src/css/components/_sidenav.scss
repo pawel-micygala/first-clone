@@ -1,7 +1,6 @@
 .sidenav {
     &__home {
-        margin-bottom: auto;
-        margin-top: $sidenav-home-margin-top-desktop;
+        margin: $sidenav-home-margin;
         @include media-max-width("phone") {
             @include margins-y-none;
         }
@@ -26,8 +25,7 @@
         }
     }
     &__menu {
-        margin-top: auto;
-        margin-bottom: $sidenav-menu-margin-bottom-desktop;
+        margin:$sidenav-menu-margin;
         @include media-max-width("phone") {
             @include margins-y-none;
         }

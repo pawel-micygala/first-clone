@@ -15,11 +15,16 @@ const topnavDroprightToggle = document.querySelector(".js-topnav-dropright-toggl
 const topnavSearchClose = document.querySelector(".topnav__search-close");
 const topnavDropright = document.querySelector(".js-topnav-dropright");
 
-topnavDroprightToggle.addEventListener("click", e =>{
-    topnavDropright.classList.add("topnav__dropright--is-open");
-});
+const handleUserRightdown = e => {
+    topnavDropright.classList.toggle("topnav__dropright--is-open");
+};
 
-topnavSearchClose.addEventListener("click", e =>{
-    topnavDropright.classList.remove("topnav__dropright--is-open");
-});
+if (topnavDropright) {
+    topnavDroprightToggle.addEventListener("click", e => {
+        handleUserRightdown(e);
+    });
+    topnavSearchClose.addEventListener("click", e => {
+        handleUserRightdown(e);
+    });
+};
 

@@ -16,8 +16,7 @@
         font-size: $topnav-dropright-font-size;
         top: $topnav-dropright-top;
         left: $topnav-dropright-left;
-        padding-top: $topnav-dropright-padding-top;
-        padding-bottom: $topnav-dropright-padding-bottom;
+        padding: $topnav-dropright-padding;
         overflow: hidden;
         max-width: $topnav-dropright-max-width;
         transition: all 0.3s;
@@ -36,8 +35,7 @@
         font-weight: normal;
         right: $topnav-search-close-right;
         font-size: $topnav-search-close-font-size;
-        padding-left: $topnav-search-close-padding-left;
-        padding-right: $topnav-search-close-padding-right;
+        padding: $topnav-search-close-padding;
         color: $topnav-search-close-color;
     }
     &__input {
@@ -76,8 +74,7 @@
     &__account {
         display: flex;
         align-items: center;
-        margin-right: $topnav-account-margin-right;
-        margin-left: $topnav-account-margin-left;
+        margin:$topnav-account-margin;
     }
     &__name {
         color: $color-gray-dark;

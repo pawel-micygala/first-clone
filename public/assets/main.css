@@ -53,8 +53,7 @@ body {
   justify-content: right; }
 
 .sidenav__home {
-  margin-bottom: auto;
-  margin-top: 20%; }
+  margin: 20% 0 auto 0; }
   @media (max-width: 600px) {
     .sidenav__home {
       margin-bottom: 0px;
@@ -80,8 +79,7 @@ body {
       margin-bottom: 0px; } }
 
 .sidenav__menu {
-  margin-top: auto;
-  margin-bottom: 10px; }
+  margin: auto 0 10px 0; }
   @media (max-width: 600px) {
     .sidenav__menu {
       margin-bottom: 0px;
@@ -103,9 +101,8 @@ body {
   background-color: #fff;
   font-size: 25px;
   top: 12px;
-  left: 74px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  left: 71px;
+  padding: 5px 0 5px 0;
   overflow: hidden;
   max-width: 0;
   transition: all 0.3s; }
@@ -122,8 +119,7 @@ body {
   font-weight: normal;
   right: 2px;
   font-size: 18px;
-  padding-left: 2px;
-  padding-right: 15px;
+  padding: 0 15px 0 2px;
   color: #cecece; }
 
 .topnav__input {
@@ -159,8 +155,7 @@ body {
 .topnav__account {
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  margin-left: 10px; }
+  margin: 0 10px 0 10px; }
 
 .topnav__name {
   color: #959595; }
@@ -232,9 +227,7 @@ body {
     max-height: 100%; }
   .card__title {
     padding: 3px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px; }
+    margin: 10px 0 10px 10px; }
   .card__header {
     padding: 3px;
     margin-left: 10px;

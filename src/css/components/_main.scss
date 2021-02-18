@@ -25,37 +25,4 @@
         text-decoration: none;
     }
 }
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.card {
-    @include card;
-    &__link {
-        text-decoration: none;
-        color: $color-blue;
-    }
-    &__photo {
-        max-width: $card-photo-max-width;
-        max-height: $card-photo-max-height;
-    }
-    &__title {
-        padding: $card-title-padding;
-        margin-bottom: $card-title-margin-bottom;
-        margin-top: $card-title-margin-top;
-        margin-left: $card-title-margin-left;
-    }
-    &__header {
-        padding: $card-header-padding;
-        margin-left: $card-header-margin-left;
-        font-weight: $font-weight;
-        line-height: $card-header-line-height;
-    }
-    &__text {
-        padding: $card-text-padding;
-        line-height: $line-height;
-        margin-left: $card-text-margin-left;
-        color: $color-gray-dark;
-    }
-}
+
