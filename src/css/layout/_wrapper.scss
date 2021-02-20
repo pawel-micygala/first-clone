@@ -1,0 +1,7 @@
+.wrapper {
+    display: flex;
+    @include media-max-width("phone") {
+        display: flex;
+        flex-direction: column;
+    }
+}

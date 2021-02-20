@@ -1,0 +1,103 @@
+.topnav {
+    &__search {
+        margin-left: $topnav-search-margin-left;
+    }
+    &__link {
+        border-color: transparent;
+        background: none;
+        outline: none;
+        position: relative;
+        cursor: pointer;
+    }
+    &__dropright {
+        display: flex;
+        position: absolute;
+        background-color: $color-white;
+        font-size: $topnav-dropright-font-size;
+        top: $topnav-dropright-top;
+        left: $topnav-dropright-left;
+        padding: $topnav-dropright-padding;
+        overflow: hidden;
+        max-width: $topnav-dropright-max-width;
+        transition: all 0.3s;
+
+        &--is-open {
+            max-width: $topnav-dropright-is-open-max-width;
+            max-height: $topnav-dropright-is-open-max-height;
+        }
+    }
+    &__search-close {
+        border-color: transparent;
+        background: none;
+        outline: none;
+        position: relative;
+        cursor: pointer;
+        font-weight: normal;
+        right: $topnav-search-close-right;
+        font-size: $topnav-search-close-font-size;
+        padding: $topnav-search-close-padding;
+        color: $topnav-search-close-color;
+    }
+    &__input {
+        border: none;
+    }
+    &__user {
+        display: flex;
+        margin-left: auto;
+
+        position: relative;
+    }
+    &__dropdown {
+        position: absolute;
+        top: $topnav-dropdown-top;
+        left: $topnav-dropdown-left;
+        background-color: $color-white;
+        overflow: hidden;
+        max-height: $topnav-dropdown-max-height;
+        transition: all 0.3s;
+
+        &--is-open {
+            max-height: $topnav-dropdown-is-open-max-height;
+        }
+    }
+    &__dropdownList {
+        padding: $topnav-dropdownList-padding;
+        list-style: none;
+    }
+    &__dropdownItem {
+        padding: $topnav-dropdownItem-padding;
+    }
+    &__dropdownLink {
+        text-decoration: none;
+        color: $color-gray-dark;
+    }
+    &__account {
+        display: flex;
+        align-items: center;
+        margin:$topnav-account-margin;
+    }
+    &__name {
+        color: $color-gray-dark;
+    }
+    &__photo {
+        border-radius: $topnav-photo-border-radius;
+    }
+    &__circle {
+        width: $topnav-circle-width-desktop;
+        border-left: $offset solid $color-gray;
+        display: flex;
+        justify-content: center;
+        @include media-max-width("phone") {
+            @include margins-y-none;
+        }
+    }
+    &__logout {
+        width: $topnav-circle-width-desktop;
+        border-left: $offset solid $color-gray;
+        display: flex;
+        justify-content: center;
+        @include media-max-width("phone") {
+            @include margins-y-none;
+        }
+    }
+}

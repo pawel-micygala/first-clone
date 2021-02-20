@@ -1,0 +1,28 @@
+.main {
+    &__content {
+        background-color: $color-gray;
+        padding-top: $main-content-padding-top;
+    }
+    &__view {
+        display: flex;
+        justify-content: space-between;
+        margin: $main-view-margin-desktop;
+        @include media-max-width("phone") {
+            display: flex;
+            justify-content: space-between;
+            width: $main-view-width-phone;
+            margin: auto;
+            padding-bottom: $main-view-padding-bottom-phone;
+        }
+    }
+    &__collections {
+        color: $color-gray-dark;
+        font-weight: $font-weight;
+    }
+    &__listings {
+        color: $color-blue;
+        font-weight: $font-weight;
+        text-decoration: none;
+    }
+}
+
