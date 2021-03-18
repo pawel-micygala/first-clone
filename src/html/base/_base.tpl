@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="static/css/main.css" />
 </head>
 <body>
-    {% block page %}{% endblock %}
+
+<div class="wrapper">
+{% block page %}
+    
+{% endblock %}
+</div>
     <script src="static/js/app.js"></script>
 </body>
 </html>
